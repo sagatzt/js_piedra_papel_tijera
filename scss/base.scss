@@ -1,0 +1,40 @@
+@import "./components/modal";
+
+@font-face {
+    font-family: "goldman-regular";
+    src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body{
+    background-color: #fff;
+    font-family: "goldman-regular";
+    color: #333;
+
+}
+.navbar{
+    justify-content: inherit;
+    border-bottom:5px solid #ccc;
+    margin-bottom:20px;
+}
+.container{
+    max-width: 800px;
+}
+
+.jugadas{
+    margin-top:20px;
+}
+.img-jugada{
+    width: 100px;
+    padding: 10px;
+}
+
+div[class^='jugador-']{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+div[class^='marcador-']{
+    border:1px dashed #ccc;
+    padding:10px;
+    background: rgb(243, 255, 215);
+}

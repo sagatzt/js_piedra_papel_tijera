@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+<header class="header align-middle justify-content-center">
+  <!-- Image and text -->
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/ppt.png" width="200px" class="d-inline-block align-top" alt="">
+    </a>
+    <h3>Piedra, papel o tijera</h3>
+  </nav>
+</header>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <p>Usted va a jugar contra una máquina. Por favor, seleccione su jugada y pulse el botón JUGAR. El ganador será
+          el mejor de 3 jugadas.</p>
+      </div>
+      <div class="col-sm-3">
+        <button class="btn-lg btn-success" id="btnJugar">Jugar</button>
+      </div>
+    </div>
+    <div class="row jugadas">
+      <div class="jugador-1 col-12 col-sm-6">
+        <h4 class="saludo-p1"></h4>
+        <div class="col-12">
+          <img src="images/piedra.png" class="img-jugada">
+          <select id="jugada-p1">
+            <option value="piedra" selected="selected">PIEDRA</option>
+            <option value="papel">PAPEL</option>
+            <option value="tijera">TIJERA</option>
+          </select>
+        </div>
+        <div class="marcador-p1 col-12">
+          <label>Puntos:</label>
+        </div>
+      </div>
+      <div class="jugador-2 col-12 col-sm-6">
+        <h4>Partida de máquina</h4>
+        <div class="col-12">
+          <img src="images/piedra.png" class="img-jugada" id="jugada-p2">
+        </div>
+        <div class="marcador-p2 col-12">
+          <label>Puntos:</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <!-- VENTANA MODAL -->
+  <div class="modal">
+    <div class="modal-container">
+      <div class="modal-body">
+          <fieldset>
+          
+          <!-- Form Name -->
+          <legend>Piedra, Papel o Tijera</legend>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-12 control-label" for="txtPlayer1">Introduce tu nombre: </label>  
+            <div class="col-12">
+              <input id="jugador1" type="text" placeholder="" class="form-control input-md" required autofocus>
+            </div>
+          </div>
+          
+          <!-- Button -->
+          <div class="form-group">
+            <div class="col-12">
+              <button id="btnComenzar" name="btnComenzar" class="btn btn-success">Comenzar el juego</button>
+            </div>
+          </div>
+          
+          </fieldset>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
